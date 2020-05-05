@@ -21,7 +21,7 @@
             <!-- logo -->
             <div class="col-xs-9 col-md-6 col-lg-6">
               <div class="ms_home">
-                <a href="#">start bootsrap</a>
+                <a class="start" href="#">start bootsrap</a>
               </div>
             </div>
 
@@ -87,11 +87,11 @@
       <!-- end Jumbotron -->
 
       <!-- Portfolio -->
-      <section id="portfolio" class="ms_section ms_portfolio ms_secondary">
+      <section id="portfolio" class="ms_section ms_portfolio ms_secondary text-center">
         <div class="container">
 
           <!-- Intro -->
-          <div class="ms_intro text-center ms_margin-btm">
+          <div class="ms_intro ms_margin-btm">
 
             <!-- title -->
             <h2 class="ms_title">portfolio</h2>
@@ -171,7 +171,7 @@
           <!-- paragraphs -->
           <div class="container-fluid ms_margin-btm">
             <div class="row">
-              <div class="col-xs-12 col-md-6">
+              <div class="col-xs-12 col-md-6 ms_margin-btm">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
               <div class="col-xs-12 col-md-6">
@@ -182,9 +182,10 @@
 
           <!-- download -->
           <div class="ms_download text-center">
-            <a class="btn" href="#" role="button">
+            <button type="submit" class="btn ms_dwnld ms_primary">
               <i class="fas fa-download"></i>
               Download
+            </button>
             </a>
           </div>
         </div>
@@ -206,14 +207,39 @@
           </div>
           <!-- end Intro -->
 
-          <!-- form -->
-          <form class="ms_margin-btm" action="index.html" method="post">
+          <!-- Form Bootstrap -->
+          <form>
+            <div class="form-group">
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" class="ms_control" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Email address</label>
+              <input type="email" class="ms_control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="phone" class="sr-only">Phone Number</label>
+              <input type="number" class="ms_control" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message</label>
+              <textarea class="ms_control" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn ms_primary">Send</button>
+          </form>
+          <!-- end Form Bootstrap -->
+
+
+          <!-- My Form -->
+
+          <!-- <form class="ms_margin-btm" action="index.html" method="post">
             <input type="text" placeholder="Name" name="name" value="">
             <input type="email" placeholder="Email Address" name="email" value="">
             <input type="number" placeholder="Phone Number" name="phone" value="">
             <textarea placeholder="Message" name="message" rows="8" cols="80"></textarea>
             <input class="btn ms_primary" type="submit" value="Send">
-          </form>
+          </form> -->
+          <!-- end My Form -->
         </div>
       </section>
       <!-- end Contact me -->
@@ -239,16 +265,24 @@
 
               <ul class="ms_list ms_social">
                 <li>
-                  <i class="fab fa-facebook-f"></i>
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
                 </li>
                 <li>
-                  <i class="fab fa-facebook-f"></i>
+                  <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
                 </li>
                 <li>
-                  <i class="fab fa-facebook-f"></i>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
                 </li>
                 <li>
-                  <i class="fab fa-facebook-f"></i>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
                 </li>
               </ul>
             </div>

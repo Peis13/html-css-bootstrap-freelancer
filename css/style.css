@@ -1,6 +1,7 @@
 /* COMMON */
 body {
   padding-top: 70px;
+  font-size: 15px;
 }
 
 ul {
@@ -28,10 +29,6 @@ a {
   display: inline-block;
 }
 
-.ms_divider {
-  font-size: 20px;
-}
-
 .ms_divider::before,
 .ms_divider::after {
   content: '';
@@ -48,6 +45,18 @@ a {
 #contact_me .ms_divider::before,
 #contact_me .ms_divider::after {
   background-color: #2c3e50;
+}
+
+/* font size */
+.btn {
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.ms_divider {
+  font-size: 20px;
 }
 
 /* Margin and Padding */
@@ -77,7 +86,41 @@ a {
 .ms_title {
   color: #333;
 }
+
+/* hover */
+a:hover {
+  text-decoration: none;  
+}
+.ms_navbar .start:hover {
+  color: #1abc9c;
+  transition: 0.5s;
+}
+
+.ms_navbar a:not(.start):hover {
+  color: #fff;
+  background-color: #1abc9c;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #248a76;
+  transition: 0.5s;
+}
+
+.ms_dwnld:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.ms_social a:hover{
+  color: #2c3e50;
+  background-color: #fff;
+  transition: 0.5s;
+}
 /* END COMMON */
+
 
 /* HEADER */
 
@@ -107,7 +150,11 @@ a {
 
 /* Portfolio */
 .ms_item {
+  width: 100%;
+  min-width: 200px;
+  max-width: 450px;
   height: 300px;
+  display: inline-block;
   margin-bottom: 30px;
   border-radius: 10px;
   background-size: 414px;
@@ -141,17 +188,28 @@ a {
   background-image: url(../img/submarine.png);
 }
 
-/* About */
-
-/* download */
-.ms_download a {
-  border-color: #fff;
-  background-color: transparent;
-}
-
 /* Contact me */
 
-/* Form */
+/* Form Bootstrap */
+.form-group {
+  color: #2c3e50;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 0;
+}
+
+.ms_control {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+}
+
+.ms_control::placeholder {
+  color: #2c3e50;
+}
+
+/* My Form */
+/*
 input:not(.btn),
 textarea {
   color: #2c3e50;
@@ -166,6 +224,7 @@ input::placeholder,
 textarea::placeholder {
   color: #2c3e50;
 }
+*/
 /* END MAIN */
 
 /* FOOTER */
@@ -174,7 +233,8 @@ textarea::placeholder {
 }
 
 /* social icon */
-.ms_social li {
+.ms_social a {
+  display: inline-block;
   width: 50px;
   height: 50px;
   margin: 0 5px;
@@ -197,6 +257,12 @@ textarea::placeholder {
   /* COMMON */
   body {
     padding-top: 100px;
+    font-size: 18px;
+  }
+
+  /* font size */
+  .btn {
+    font-size: 18px;
   }
 
   .ms_divider {
@@ -242,7 +308,7 @@ textarea::placeholder {
   /* Contact me */
 
   /* Form */
-  input:not(.btn),
+  /* input:not(.btn),
   textarea {
     padding: 15px 0;
     font-size: 17px;
@@ -252,7 +318,7 @@ textarea::placeholder {
   input::placeholder,
   textarea::placeholder {
     color: #2c3e50;
-  }
+  } */
   /* END MAIN */
 
   /* FOOTER */
