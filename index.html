@@ -14,9 +14,35 @@
     <header>
 
       <!-- Navbar -->
-      <nav class="navbar navbar-fixed-top ms_navbar">
+      <nav class="navbar-fixed-top ms_navbar ms_alternative">
         <div class="container">
+          <div class="row">
 
+            <!-- logo -->
+            <div class="col-xs-6 col-md-6 col-lg-6">
+              logo
+            </div>
+
+            <!-- menù -->
+            <div class="col-xs-6 col-md-6 col-lg-6 text-right">
+              <ul class="hidden-xs ms_list ms_menu">
+                <li>
+                  <a href="#">portfolio</a>
+                </li>
+                <li>
+                  <a href="#">about</a>
+                </li>
+                <li>
+                  <a href="#">contact</a>
+                </li>
+              </ul>
+
+              <!-- burger -->
+              <div class="visible-xs-block ms_burger">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
       <!-- end Navbar -->
@@ -27,23 +53,28 @@
     <main>
 
       <!-- Jumbotron -->
-      <section id="jumbotron" class="ms_jumbo ms_primary">
+      <section id="jumbotron" class="ms_section ms_jumbo ms_primary text-center">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
 
               <!-- avatar -->
               <div class="ms_avatar">
-                avatar
+                <img src="img/avataaars.svg" alt="">
               </div>
 
-              <!-- title -->
-              <h1>start bootstrap</h1>
+              <!-- Intro -->
+              <div class="ms_intro ms_margin-btm">
 
-              <!-- divider -->
-              <div class="ms_divider">
-                <i class="fas fa-star"></i>
+                <!-- title -->
+                <h1>start bootstrap</h1>
+
+                <!-- divider -->
+                <div class="ms_divider">
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
+              <!-- end Intro -->
 
               <!-- sub-titles -->
               <h4>grapic artist - web deswigner - illustrator</h4>
@@ -54,57 +85,63 @@
       <!-- end Jumbotron -->
 
       <!-- Portfolio -->
-      <section id="portfolio" class="ms_portfolio ms_secondary">
+      <section id="portfolio" class="ms_section ms_portfolio ms_secondary">
         <div class="container">
 
-          <h2 class="ms_title">portfolio</h2>
+          <!-- Intro -->
+          <div class="ms_intro text-center ms_margin-btm">
 
-          <!-- divider -->
-          <div class="ms_divider">
-            <i class="fas fa-star"></i>
+            <!-- title -->
+            <h2 class="ms_title">portfolio</h2>
+
+            <!-- divider -->
+            <div class="ms_divider">
+              <i class="fas fa-star"></i>
+            </div>
           </div>
+          <!-- end Intro -->
 
           <div class="row">
 
             <!-- card -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_item">
-                img
+              <div class="ms_item ms_cabin">
+                &nbsp;
               </div>
             </div>
 
             <!-- card -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_item">
-                img
+              <div class="ms_item ms_cake">
+                &nbsp;
               </div>
             </div>
 
             <!-- card -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_item">
-                img
+              <div class="ms_item ms_circus">
+                &nbsp;
               </div>
             </div>
 
             <!-- card -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_item">
-                img
+              <div class="ms_item ms_game">
+                &nbsp;
               </div>
             </div>
 
             <!-- card -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_item">
-                img
+              <div class="ms_item ms_safe">
+                &nbsp;
               </div>
             </div>
 
             <!-- card -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_item">
-                img
+              <div class="ms_item ms_submarine">
+                &nbsp;
               </div>
             </div>
           </div>
@@ -113,9 +150,13 @@
       <!-- end Portfolio -->
 
       <!-- About -->
-      <section id="about" class="ms_about ms_primary">
+      <section id="about" class="ms_section ms_about ms_primary">
         <div class="ms_wrapper">
-          <div class="text-center">
+
+          <!-- Intro -->
+          <div class="ms_intro text-center ms_margin-btm">
+
+            <!-- title -->
             <h2>about</h2>
 
             <!-- divider -->
@@ -123,9 +164,10 @@
               <i class="fas fa-star"></i>
             </div>
           </div>
+          <!-- end Intro -->
 
           <!-- paragraphs -->
-          <div class="container-fluid">
+          <div class="container-fluid ms_margin-btm">
             <div class="row">
               <div class="col-xs-12 col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -138,7 +180,7 @@
 
           <!-- download -->
           <div class="ms_download text-center">
-            <a class="btn btn-default" href="#" role="button">
+            <a class="btn" href="#" role="button">
               <i class="fas fa-download"></i>
               Download
             </a>
@@ -148,19 +190,22 @@
       <!-- end About -->
 
       <!-- Contact me -->
-      <section id="contact_me" class="ms_secondary">
+      <section id="contact_me" class="ms_section ms_secondary">
         <div class="ms_wrapper">
-          <div class="text-center">
-            <h2>contact me</h2>
+
+          <!-- Intro -->
+          <div class="ms_intro text-center ms_margin-btm">
+            <h2 class="ms_title">contact me</h2>
 
             <!-- divider -->
             <div class="ms_divider">
               <i class="fas fa-star"></i>
             </div>
           </div>
+          <!-- end Intro -->
 
           <!-- form -->
-          <form class="" action="index.html" method="post">
+          <form class="ms_margin-btm" action="index.html" method="post">
             <input type="text" placeholder="Name" name="name" value="">
             <input type="email" placeholder="Email Address" name="email" value="">
             <input type="number" placeholder="Phone Number" name="phone" value="">
@@ -173,24 +218,24 @@
     </main>
     <!-- END MAIN -->
 
-    <footer class="text-center">
+    <footer class="ms_alternative text-center">
 
       <!-- Footer top -->
-      <div class="ms_footer-top">
+      <div class="ms_footer-top ms_section">
         <div class="container">
           <div class="row">
 
             <!-- address -->
-            <div class="col-xs-12 col-md-4 ms_address">
+            <div class="col-xs-12 col-md-4 ms_address ms_margin-btm">
               <h4>location</h4>
               <p>2215 Jhon Daniel Drive Clark, MO 54244</p>
             </div>
 
             <!-- social -->
-            <div class="col-xs-12 col-md-4 ms_social">
+            <div class="col-xs-12 col-md-4 ms_social ms_margin-btm">
               <h4>around the web</h4>
 
-              <ul class="ms_social-list">
+              <ul class="ms_list ms_social">
                 <li>
                   <i class="fab fa-facebook-f"></i>
                 </li>
@@ -217,8 +262,10 @@
       <!-- end Footer top -->
 
       <!-- Footer bottom -->
-      <div class="ms_footer-bottom">
-        <p>Copyright</p>
+      <div class="ms_footer-bottom ms_section">
+        <div class="container">
+          <p>Copyright &copy; Your Website 2019</p>
+        </div>
       </div>
       <!-- end Footer bottom -->
 
