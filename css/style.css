@@ -32,16 +32,22 @@ a {
   font-size: 20px;
 }
 
-.ms_divider::before {
-  content: 'linea';
+.ms_divider::before,
+.ms_divider::after {
+  content: '';
+  width: 80px;
   height: 4px;
-  border-radius: ;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
 }
 
-.ms_divider::after {
-  content: 'linea';
-  height: 4px;
-  border-radius: ;
+#portfolio .ms_divider::before,
+#portfolio .ms_divider::after,
+#contact_me .ms_divider::before,
+#contact_me .ms_divider::after {
+  background-color: #2c3e50;
 }
 
 /* Margin and Padding */
@@ -74,9 +80,19 @@ a {
 /* END COMMON */
 
 /* HEADER */
-.ms_navbar{
+
+/* Navbar */
+.ms_navbar {
   height: 70px;
   line-height: 70px;
+}
+
+.ms_home a {
+  font-size: 20px;
+}
+
+.ms_menu a {
+  padding: 15px;
 }
 /* END HEADER */
 
@@ -99,6 +115,7 @@ a {
   background-repeat: no-repeat;
 }
 
+/* thumbnails */
 .ms_cabin {
   background-color: #ba4b63;
   background-image: url(../img/cabin.png);
@@ -133,6 +150,8 @@ a {
 }
 
 /* Contact me */
+
+/* Form */
 input:not(.btn),
 textarea {
   color: #2c3e50;
@@ -142,6 +161,7 @@ textarea {
   border-bottom: 1px solid lightgray;
   outline: none;
 }
+
 input::placeholder,
 textarea::placeholder {
   color: #2c3e50;
@@ -157,6 +177,8 @@ textarea::placeholder {
 .ms_social li {
   width: 50px;
   height: 50px;
+  margin: 0 5px;
+  font-size: 16px;
   line-height: 50px;
   border: 1px solid white;
   border-radius: 50%;
@@ -169,17 +191,81 @@ textarea::placeholder {
 
 /* MEDIA QUERY */
 
-/* Md */
+/* Md screen */
 @media screen and ( min-width: 992px ) {
 
-  img {
-    height: 250px;
+  /* COMMON */
+  body {
+    padding-top: 100px;
   }
 
+  .ms_divider {
+    font-size: 25px;
+  }
+
+  /* Margin and Padding */
   .ms_section {
     padding: 40px 0;
   }
+
+  .ms_margin-btm {
+    margin-bottom: 30px;
+  }
+  /* END COMMON */
+
+  /* HEADER */
+
+  /* Navbar */
+  .ms_navbar {
+    height: 100px;
+    line-height: 100px;
+  }
+
+  .ms_home a {
+    font-size: 25px;
+  }
+
+  .ms_menu a {
+    padding: 20px;
+    font-size: 18px;
+  }
+  /* END HEADER */
+
+
+  /* MAIN */
+
+  /* Jumbotron */
+  .ms_avatar img {
+    height: 250px;
+  }
+
+  /* Contact me */
+
+  /* Form */
+  input:not(.btn),
+  textarea {
+    padding: 15px 0;
+    font-size: 17px;
+    border-bottom: 2px solid lightgray;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #2c3e50;
+  }
+  /* END MAIN */
+
+  /* FOOTER */
   footer .row > * {
     margin-bottom: 0;
   }
+
+  /* social icon */
+  .ms_social li {
+    width: 55px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+  }
+  /* END FOOTER */
 }
